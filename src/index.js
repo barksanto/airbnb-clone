@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom'; //import other external libraries
 import './index.css'; //    ./ means this folder
 import App from './App';
+import Hello from './components/hello'
 // import reportWebVitals from './reportWebVitals';
+const root = <div>
+  <Hello firstName="Barkley" lastName="Santo" />
+  <Hello firstName="Alex" lastName="Gibbons" />
+</div>
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  root,
   document.getElementById('root')
 );
 
