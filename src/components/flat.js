@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./flat";
+import "./flat.css";
 
 
 
@@ -9,6 +9,7 @@ class Flat extends Component {
       + this.props.flat.priceCurrency
       + " - " + this.props.flat.name;
 
+    // Template Literal ES6
     const style = {
       backgroundImage: `url('${this.props.flat.imageUrl}')`
     }
@@ -17,7 +18,7 @@ class Flat extends Component {
       <div className="flat">
         <div className="flat-picture" style={style}></div>
         <div className="flat-title">
-          {this.props.title}
+          {title}
         </div>
       </div>
     );
