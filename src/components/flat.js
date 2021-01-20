@@ -18,6 +18,7 @@ class Flat extends Component {
       <div className="flat">
         <div className="flat-picture" style={style}></div>
         <div className="flat-title">
+          {/* where we use the title variable declared above */}
           {title}
         </div>
       </div>
