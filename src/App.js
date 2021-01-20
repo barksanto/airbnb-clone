@@ -17,9 +17,16 @@ class App extends Component {
     };
 
     return (
-      <div>
-        <Flat flat={flat} />
-      </div >
+      <div classname="app">
+        <div className="main">
+          <div className="search">
+          </div>
+          <div className="flats">
+          </div>
+        </div>
+        <div className="map">
+        </div>
+      </div>
     );
   }
 }
